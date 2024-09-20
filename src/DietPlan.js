@@ -16,7 +16,7 @@ const DietPlan = () => {
     <Container sx={{ mt: 5, mb: 4 }} maxWidth={"xl"}>
       <Typography variant="h3" sx={{mb: 5}}>Diet Plan</Typography>
       <Grid container spacing={2} justifyContent="center">
-        {bmiType == "normal"
+        {bmiType === "normal"
           ? listData.normal.map(({ text, id }) => {
               return (
                 <Grid item xs={12} sm={6} md={3} key={id}>
@@ -30,7 +30,7 @@ const DietPlan = () => {
                 </Grid>
               );
             })
-          : bmiType == "underweight"
+          : bmiType === "underweight"
           ? listData.underweight.map(({ text, id }) => {
               return (
                 <Grid item xs={12} sm={6} md={3} key={id}>
@@ -44,7 +44,7 @@ const DietPlan = () => {
                 </Grid>
               );
             })
-          : bmiType == "overweight"
+          : bmiType === "overweight"
           ? listData.overweight.map(({ text, id }) => {
               return (
                 <Grid item xs={12} sm={6} md={3} key={id}>
