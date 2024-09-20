@@ -28,6 +28,69 @@
   color: #61dafb;
 }
 
+#container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 0px;
+}
+
+.css-91svcj-MuiPaper-root-MuiCard-root{
+  margin-top: 9px;
+  box-shadow: 3px 7px 32px -49px rgba(0,0,0,0.75);
+  max-height: max-content;
+  padding: 1em 0em;
+  max-width: 1050px;
+  width: 40%;
+}
+
+.css-6fm6rz-MuiPaper-root-MuiCard-root{
+  margin: 0 !important;
+}
+
+.css-46bh2p-MuiCardContent-root:last-child div:nth-child(2){
+  width: 100% !important;
+}
+
+.css-f6mhdk{
+  max-width: 300px;
+}
+
+.recharts-default-legend{
+  margin: -14px !important;
+}
+
+.css-46bh2p-MuiCardContent-root:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-480o17-MuiGrid-root>.MuiGrid-item{
+  padding-top: 20px !important;
+}
+
+.css-12nm2t9-MuiTypography-root{
+  margin-bottom: 1.35em !important;
+}
+
+@media (max-width: 950px){
+  #container{
+    display: block;
+  }
+
+  .css-91svcj-MuiPaper-root-MuiCard-root{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .css-6fm6rz-MuiPaper-root-MuiCard-root{
+    max-width: none !important;
+    padding: 0;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +99,4 @@
     transform: rotate(360deg);
   }
 }
+

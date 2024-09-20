@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BMICalculator from "./BMI.js";
+import NavBar from "./Navbar.js";
+import ResponsiveCards from "./Cards.js";
+import DietPlan from "./DietPlan.js";
+import { useContext } from "react";
+import { MyContext } from "./Context.js";
 
 function App() {
+  const { bmiResult } = useContext(MyContext);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <BMICalculator />
+      {bmiResult && <ResponsiveCards />}
+      {bmiResult && <DietPlan />}
     </div>
   );
 }
