@@ -1,8 +1,7 @@
 import "./App.css";
 import BMICalculator from "./BMI.js";
 import NavBar from "./Navbar.js";
-import ResponsiveCards from "./Cards.js";
-import DietPlan from "./DietPlan.js";
+import ExerciseCards from "./Cards.js";
 import { useContext } from "react";
 import { MyContext } from "./Context.js";
 
@@ -12,8 +11,8 @@ function App() {
     <div className="App">
       <NavBar />
       <BMICalculator />
-      {bmiResult && <ResponsiveCards />}
-      {bmiResult && <DietPlan />}
+      <ExerciseCards /> 
+      {/* {bmiResult && <DietPlan />} */}
     </div>
   );
 }

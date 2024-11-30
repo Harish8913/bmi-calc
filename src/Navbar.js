@@ -15,7 +15,7 @@ const NavBar = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        BMI Calculator and Index
+        BMI Calculator
       </Typography>
       <List>
         {navItems.map((item) => (
@@ -34,9 +34,10 @@ const NavBar = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            textAlign={'center'}
+            sx={{ flexGrow: 1, display: { sm: 'block' } }}
           >
-            BMI Calculator and Index
+            BMI Calculator
           </Typography>
 
           <IconButton

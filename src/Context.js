@@ -5,7 +5,7 @@ export const MyContext = createContext();
 export const AppContext = ({ children }) => {
   const [bmiResult, setBmiResult] = useState("");
   const [bmiVal, setBmiValue] = useState();
-  const [bmiType, setBmiType] = useState();
+  const [bmiType, setBmiType] = useState('Normal Weight');
 
   return (
     <MyContext.Provider value={{ bmiResult, setBmiResult, bmiVal, setBmiValue, bmiType, setBmiType }}>
