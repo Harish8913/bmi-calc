@@ -132,13 +132,13 @@ const DietCards = () => {
   }, [bmiType]);
 
   return (
-    <Container maxWidth="xl" sx={{ mt: 4 }}>
+    <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
     <Typography variant="h3" mb={6}>Diet Cautions</Typography>
-      <Grid container spacing={8} justifyContent={'space-evenly'}>
+      <Grid container spacing={4} columnSpacing={8} justifyContent={'space-evenly'}>
         {diets.length > 0 ? (
           diets.map((diet, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{px: 2, py: 3, height: 300, display: 'flex', alignItems: 'center'}}>
+              <Card sx={{p: 2, height: 300, display: 'flex', alignItems: 'center'}}>
                 {/* <Box
                   sx={{
                     height: "70%",
