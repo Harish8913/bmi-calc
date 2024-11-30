@@ -7,29 +7,29 @@ import {
   Container,
   Box,
 } from "@mui/material";
-import under1 from "./assets/under1.jpg";
-import under2 from "./assets/under2.png";
-import under3 from "./assets/under3.webp";
+import under1 from "./assets/exercise/under1.jpg";
+import under2 from "./assets/exercise/under2.png";
+import under3 from "./assets/exercise/under3.webp";
 
-import normal1 from './assets/normal1.jpg'
-import normal2 from './assets/normal2.webp'
-import normal3 from './assets/normal3.avif'
+import normal1 from "./assets/exercise/normal1.jpg";
+import normal2 from "./assets/exercise/normal2.webp";
+import normal3 from "./assets/exercise/normal3.avif";
 
-import over1 from './assets/over1.jpg'
-import over2 from './assets/over2.jpg'
-import over3 from './assets/over3.jpg'
+import over1 from "./assets/exercise/over1.jpg";
+import over2 from "./assets/exercise/over2.jpg";
+import over3 from "./assets/exercise/over3.jpg";
 
-import obesity1 from './assets/obesity1.webp'
-import obesity2 from './assets/obesity2.webp'
-import obesity3 from './assets/obesity3.jpg'
+import obesity1 from "./assets/exercise/obesity1.webp";
+import obesity2 from "./assets/exercise/obesity2.webp";
+import obesity3 from "./assets/exercise/obesity3.jpg";
 
-import severe1 from './assets/severe1.jpg'
-import severe2 from './assets/severe2.webp'
-import severe3 from './assets/severe3.jpg'
+import severe1 from "./assets/exercise/severe1.jpg";
+import severe2 from "./assets/exercise/severe2.webp";
+import severe3 from "./assets/exercise/severe3.jpg";
 
-import vsevere1 from './assets/vsevere1.webp'
-import vsevere2 from './assets/vsevere2.jpg'
-import vsevere3 from './assets/vsevere3.jpg'
+import vsevere1 from "./assets/exercise/vsevere1.webp";
+import vsevere2 from "./assets/exercise/vsevere2.jpg";
+import vsevere3 from "./assets/exercise/vsevere3.jpg";
 
 import { MyContext } from "./Context";
 
@@ -72,7 +72,7 @@ const exerciseData = {
         "Practice for 20-30 minutes, 3 times a week for flexibility.",
     },
   ],
-  "overweight": [
+  overweight: [
     {
       imgSrc: over1,
       title: "Rowing Machine",
@@ -157,7 +157,10 @@ const ExerciseCards = () => {
 
   return (
     <Container maxWidth="xl" sx={{ mt: 4 }}>
-      <Grid container spacing={8} justifyContent={'space-evenly'}>
+      <Typography variant="h3" mb={6}>
+        Exercise For You
+      </Typography>
+      <Grid container spacing={8} justifyContent={"space-evenly"}>
         {exercises.length > 0 ? (
           exercises.map((exercise, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
